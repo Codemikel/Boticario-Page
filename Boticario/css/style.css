@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  max-width: 1440px;
+}
+:root {
+  --principal-color: #25E19D;
+  --secondary-color: #2A2A2A;
+  --principal-font: 'Indie Flower', cursive;
+}
+h1 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-weight: 400;
+  font-size: 16px;
+}
+.boton {
+  background-color: var(--principal-color);
+  color: white;
+  height: 45px;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px 50px;
+}
+.header__titulo {
+  display: inherit;
+  font-size: 36px;
+  font-family: var(--principal-font);
+}
+.header .menu ul {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  align-content: center;
+}
+.header .menu ul li {
+  margin: 0 10px 0 10px;
+}
+.header .menu ul li a {
+  color: black;
+}
+.header .menu ul .boton {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header .menu ul .boton a {
+  color: white;
+}
+.header .menu ul .boton:hover {
+  cursor: pointer;
+}
+.main h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+}
+.main .tryBoticario {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 0 150px;
+  background-image: url(../assets/Rectangle3.png);
+  height: 765px;
+}
+.main .tryBoticario__container {
+  width: 365px;
+  height: 245px;
+}
+.main .tryBoticario__container h1 {
+  font-weight: 700;
+}
+.main .tryBoticario__container .boton {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+.main .tryBoticario__container .boton a {
+  color: white;
+}
+.main .principal {
+  height: 1758px;
+  padding: 20px 50px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-transform: capitalize;
+}
+.main .principal h1 {
+  padding-bottom: inherit;
+}
+.main .principal .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.main .principal .items .items__text {
+  align-items: center;
+  align-content: center;
+}
+.main .principal .items .items__text h1 {
+  padding: 20px 0;
+}

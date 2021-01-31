@@ -1,0 +1,93 @@
+@import "globales.less";
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    &__titulo{
+        display: inherit;
+        font-size: 36px;
+        font-family: var(--principal-font);
+    }
+    .menu{
+        ul{
+            display: flex;
+            justify-content: inherit;
+            align-items: center;
+            align-content: center;
+            li{
+                margin: 0 10px 0 10px;
+                a{
+                    color: black;
+                }
+            }
+            .boton{
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                a{
+                    color: white;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.main{
+    h1{
+        font-size: 38px;
+        text-transform: capitalize;
+    }
+    .tryBoticario{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 0 150px;
+        background-image: url(../assets/Rectangle3.png);
+        height: 765px;
+        &__container{
+            width: 365px;
+            height: 245px;
+            h1{
+                font-weight: 700;
+            }
+            .boton{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    .principal{
+        height: 1758px;
+        padding: 20px 50px;
+        background-color: var(--secondary-color);
+        color: white;
+        text-transform: capitalize;
+        h1{
+            padding-bottom: inherit;
+        }
+        .items{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            .items__text{
+                h1{
+                    padding: 20px 0;
+                }
+                align-items: center;
+                align-content: center;
+            }
+        }
+    }
+    
+}    
