@@ -1,16 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
   max-width: 1440px;
 }
 :root {
   --principal-color: #25E19D;
   --secondary-color: #2A2A2A;
   --principal-font: 'Indie Flower', cursive;
-}
-h1 {
-  font-weight: 700;
+  --secondary-font: 'Nunito', sans-serif;
 }
 p {
   font-weight: 400;
@@ -46,6 +43,9 @@ a {
   font-size: 36px;
   font-family: var(--principal-font);
 }
+.header .menu {
+  font-family: var(--secondary-font);
+}
 .header .menu ul {
   display: flex;
   justify-content: inherit;
@@ -70,6 +70,9 @@ a {
 }
 .header .menu ul .boton:hover {
   cursor: pointer;
+}
+.main {
+  font-family: var(--secondary-font);
 }
 .main h1 {
   font-size: 38px;
@@ -120,4 +123,44 @@ a {
 }
 .main .principal .items .items__text h1 {
   padding: 20px 0;
+}
+.main .principal__works {
+  padding-top: 70px;
+  text-align: center;
+}
+.main .principal__works .works__container {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.main .principal__works .works__container .works__items {
+  justify-content: center;
+  align-items: center;
+}
+.main .principal__works .works__container .works__items img {
+  padding-bottom: 45px;
+}
+.main .principal__works .works__container .works__items h1 {
+  padding-bottom: 20px;
+}
+footer {
+  padding: 20px 50px;
+  background-color: var(--secondary-color);
+  font-family: var(--principal-font);
+  color: white;
+}
+footer .footer__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer__container img {
+  margin: 10px;
+}
+footer .footer__container label {
+  font-family: var(--secondary-font);
+}
+footer h1 {
+  text-align: center;
+  font-size: 24px;
 }
