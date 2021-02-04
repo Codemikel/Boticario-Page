@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    &__titulo{
+        display: inherit;
+        font-size: 36px;
+        font-family: @principal-font;
+    }
+    &__menu{
+        font-family: @secondary-font;
+        width: 40%;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            li {
+                margin: 0 10px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .boton{
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                a{
+                    color: white;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
