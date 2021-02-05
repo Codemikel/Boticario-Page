@@ -1,75 +1,18 @@
+/* Variables */
 * {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
-}
-:root {
-  --principal-color: #25E19D;
-  --secondary-color: #2A2A2A;
-  --principal-font: 'Indie Flower', cursive;
-  --secondary-font: 'Nunito', sans-serif;
-}
-p {
-  font-weight: 400;
-}
-ul {
-  list-style: none;
-}
-li {
-  font-weight: 400;
-  font-size: 16px;
+  box-sizing: border-box;
 }
 .boton {
-  background-color: var(--principal-color);
   color: white;
   height: 45px;
   align-content: center;
   align-items: center;
+  background-color: #25E19D;
   cursor: pointer;
   border-radius: 10px;
-}
-a {
-  text-decoration: none;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  padding: 10px 50px;
-}
-.header__titulo {
-  display: inherit;
-  font-size: 36px;
-  font-family: var(--principal-font);
-}
-.header .menu {
-  font-family: var(--secondary-font);
-}
-.header .menu ul {
-  display: flex;
-  justify-content: inherit;
-  align-items: center;
-  align-content: center;
-}
-.header .menu ul li {
-  margin: 0 10px 0 10px;
-}
-.header .menu ul li a {
-  color: black;
-}
-.header .menu ul .boton {
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.header .menu ul .boton a {
-  color: white;
-}
-.header .menu ul .boton:hover {
-  cursor: pointer;
+  border: none;
 }
 .main {
   font-family: var(--secondary-font);
@@ -163,4 +106,47 @@ footer .footer__container label {
 footer h1 {
   text-align: center;
   font-size: 24px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px 50px;
+}
+.header__titulo {
+  display: inherit;
+  font-size: 36px;
+  font-family: 'Indie Flower', cursive;
+}
+.header__menu {
+  font-family: 'Nunito', sans-serif;
+  width: 40%;
+}
+.header__menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__menu ul li {
+  margin: 0 10px;
+  list-style: none;
+}
+.header__menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header__menu ul .boton {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header__menu ul .boton a {
+  color: white;
+}
+.header__menu ul .boton:hover {
+  cursor: pointer;
 }
